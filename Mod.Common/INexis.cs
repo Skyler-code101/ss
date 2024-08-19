@@ -1,6 +1,6 @@
-﻿namespace SampleMod
+﻿namespace Nexis
 {
-    internal interface ISampleMod
+    internal interface INexis
     {
         bool Enabled { get; }
 

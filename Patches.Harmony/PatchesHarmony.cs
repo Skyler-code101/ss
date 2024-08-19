@@ -1,16 +1,16 @@
 ﻿using FrooxEngine.UIX;
 using HarmonyLib;
 
-namespace SampleMod
+namespace Nexis
 {
     internal class PatchesHarmony
     {
-        private static ISampleMod ModInstance;
+        private static INexis ModInstance;
 
-        internal static void Apply(ISampleMod instance)
+        internal static void Apply(INexis instance)
         {
             ModInstance = instance;
-            Harmony harmony = new Harmony("com.github.mpmxyz.SampleMod"); //typically a reverse domain name is used here (https://en.wikipedia.org/wiki/Reverse_domain_name_notation)
+            Harmony harmony = new Harmony("com.github.Skyler-code101.Nexis"); //typically a reverse domain name is used here (https://en.wikipedia.org/wiki/Reverse_domain_name_notation)
             harmony.PatchAll(); // do whatever LibHarmony patching you need, this will patch all [HarmonyPatch()] instances
         }
         //Example of how a HarmonyPatch can be formatted
